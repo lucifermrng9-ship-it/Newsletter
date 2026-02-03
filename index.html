@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <form action="" method="" id="newsletter-form">
+    <div class="form-container">
+      <div class="content-1">
+        <h1 class="alert">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="updates">
+          <li><img src="assets/images/icon-list.svg" alt="tick icon"> Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-list.svg" alt="tick icon"> Measuring to ensure updates are a success</li>
+          <li><img src="assets/images/icon-list.svg" alt="tick icon"> And much more!</li>
+        </ul>
+
+        <div class="input-group">
+          <label id="email" class="sr-only">Email address</label>
+          <input type="email" id="email-input" name="email" placeholder="email@company.com">
+          <button type="submit" class="btn" id="mybtn">Subscribe to monthly newsletter</button>
+          <p id="error" class="error"></p>
+        </div>
+          
+        
+        
+      </div>
+
+      <div class="image-container">
+        <img src="assets/images/illustration-sign-up-desktop.svg" class="img">
+      </div>
+
+        
+    </div>
+  </form>
+
+  <div id="message" class="sucess-container">
+    <div class="image-container-1">
+      <img src="assets/images/icon-success.svg">
+    </div>
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span id="email-display"></span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button type="button" class="btn-1" id="dismiss-btn">Dismiss message</button>
+  </div>
+</main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Lugemwa</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
